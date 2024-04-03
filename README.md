@@ -18,5 +18,5 @@ Dicoding Notes App - Study Case Project
 3. Run Project
 
    ```bash
-   $ npm start
+   $ npm run start:dev
    ```
