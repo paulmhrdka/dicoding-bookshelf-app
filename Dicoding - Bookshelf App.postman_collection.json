@@ -1,0 +1,102 @@
+{
+	"info": {
+		"_postman_id": "5b9f308c-fe44-4e68-aab4-8aea8beaabb9",
+		"name": "Dicoding - Bookshelf App",
+		"description": "Hey there!\n\nit's Dicoding Note App API Collection - Made By Paul Mahardika.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14913699",
+		"_collection_link": "https://gold-water-442987.postman.co/workspace/My-Workspace~b6a9db1a-6c0f-4287-8fa2-fd4820f6bf36/collection/14913699-5b9f308c-fe44-4e68-aab4-8aea8beaabb9?action=share&source=collection_link&creator=14913699"
+	},
+	"item": [
+		{
+			"name": "Create Book",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Example\",\n    \"tags\": \"Example\",\n    \"body\": \"Example\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/notes",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"notes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Book",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/notes",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"notes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find Book",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/notes/j2eTTMcfqS63QLLc",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"notes",
+						"j2eTTMcfqS63QLLc"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "BASE_URL",
+			"value": "http://localhost:9000",
+			"type": "string"
+		}
+	]
+}

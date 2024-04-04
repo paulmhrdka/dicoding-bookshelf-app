@@ -1,10 +1,10 @@
 ## Description
 
-Dicoding Notes App - Study Case Project
+Dicoding Bookshelf App - Study Case Project
 
 ## Built With
 
-- [ExpressJS](https://expressjs.com/)
+- [Hapi](https://hapi.dev/)
 
 ## How To Run?
 
